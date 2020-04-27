@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Test</title>
+    <link rel="stylesheet" type="text/css" href="cstyle.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="10">
+        </div>
+        <div class="calc-body">
+            <div>
+                <input id="bc" type="button" class="btn" value="C" onclick="clrFunc()">
+                <input id="bdel" type="button" class="btn" value="DEL" onclick="delFunc()">
+                <input id="bprsnt" type="button" class="btn" value="%" onclick="insval(1)">
+                <input id="bdiv" type="button" class="btn btn2" value="/" onclick="insval('/')">
+            </div>
+            <div>
+                <input id="b7" type="button" class="btn" value="7" onclick="insval(7)">
+                <input id="b8" type="button" class="btn" value="8" onclick="insval(8)">
+                <input id="b9" type="button" class="btn" value="9" onclick="insval(9)">
+                <input id="bmul" type="button" class="btn btn2" value="*" onclick="insval('*')">
+            </div>
+            <div>
+                <input id="b4" type="button" class="btn" value="4" onclick="insval(4)">
+                <input id="b5" type="button" class="btn" value="5" onclick="insval(5)">
+                <input id="b6" type="button" class="btn" value="6" onclick="insval(6)">
+                <input id="bm" type="button" class="btn btn2" value="-" onclick="insval('-')">
+            </div>
+            <div>
+                <input id="b1" type="button" class="btn" value="1" onclick="insval(1)">
+                <input id="b2" type="button" class="btn" value="2" onclick="insval(2)">
+                <input id="b3" type="button" class="btn" value="3" onclick="insval(3)">
+                <input id="bs" type="button" class="btn btn2" value="+" onclick="insval('+')">
+            </div>
+            <div>
+                <input id="b0" type="button" class="btn" value="0" onclick="insval(0)">
+                <input id="bd" type="button" class="btn" value="." onclick="insval('.')">
+                <input id="beq" type="button" class="btn" value="=" onclick="calFunc()">
+            </div>
+        </div>
+    </div>
+
+    <script src="cscript.js"></script>
+</body>
+</html>
