@@ -14,3 +14,7 @@ function clrFunc() {
 function delFunc() {
 	disparea.value = disparea.value.slice(0, disparea.value.length-1)
 }
+
+function perFunc() {
+            disparea.value = eval(disparea.value) / 100
+        }
